@@ -8,6 +8,7 @@ jdk:
 script:
   # jdk_switcher seems to not exist?
   - jdk_switcher use openjdk8
+  - /opt/jdk_switcher/jdk_switcher.sh
 
   # Java reports version 11, but I would expect version 8
   - java -version
