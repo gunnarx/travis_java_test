@@ -1,0 +1,14 @@
+language: c++
+
+dist: xenial
+
+jdk:
+  - openjdk8
+
+script:
+  # jdk_switcher seems to not exist?
+  - jdk_switcher use openjdk8
+
+  # Java reports version 11, but I would expect version 8
+  - java -version
+
